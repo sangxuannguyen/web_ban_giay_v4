@@ -1,0 +1,5 @@
+# Thư mục ảnh người dùng tải lên: KHÔNG cho chạy mã PHP/CGI, tránh bị upload webshell
+Options -Indexes -ExecCGI
+<FilesMatch "\.(php|phtml|php3|php4|php5|phps|pl|py|cgi)$">
+    Require all denied
+</FilesMatch>
